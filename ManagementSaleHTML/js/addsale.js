@@ -12,7 +12,6 @@ function addSale(){
         date: date,
         numberProductsSold: numberProductsSold,
         paymentMethod: paymentMethod,
-        yearPublish: yearPublish,
         saleStatus: saleStatus,
         totalSale: totalSale,
         codeProduct: codeProduct
