@@ -5,6 +5,7 @@ function addSale(){
     let paymentMethod = document.getElementById("input-payment-method").value;
     let saleStatus= document.getElementById("input-sale-status").value;
     let totalSale = document.getElementById("input-total-sale").value;
+    let codeProduct = document.getElementById("input-code-product").value;
 
     let saleData = {
         code: code,
@@ -13,7 +14,8 @@ function addSale(){
         paymentMethod: paymentMethod,
         yearPublish: yearPublish,
         saleStatus: saleStatus,
-        totalSale: totalSale
+        totalSale: totalSale,
+        codeProduct: codeProduct
     };
 
     let url = 'http://localhost:8080/ManagementSale/rest/ManagementSale/createSale';
