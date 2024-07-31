@@ -1,12 +1,12 @@
 function addProduct(){
-    let code = document.getElementById("input-code-product").value;
+    let id = document.getElementById("input-id-product").value;
     let name = document.getElementById("input-name-product").value;
     let price = document.getElementById("input-price-product").value;
     let stock = document.getElementById("input-stock-product").value;
     let category= document.getElementById("input-category-product").value;
 
     let productData = {
-        code: code,
+        id: id,
         name: name,
         price: price,
         stock: stock,

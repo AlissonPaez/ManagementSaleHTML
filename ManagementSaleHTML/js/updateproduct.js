@@ -1,8 +1,8 @@
-let codeProduct = "";
+let idProduct = "";
 function loadPageProduct(){
     let localStorageProduct = localStorage.getItem("productData");;
     let productData = JSON.parse(localStorageProduct);
-    codeSale = productData.code;
+    idProduct = productData.code;
     document.getElementById("input-name-product").value = saleData.name;
     document.getElementById("input-price-product").value = saleData.price;
     document.getElementById("input-stock-product").value = saleData.stock;
@@ -17,20 +17,20 @@ function updateProduct(){
     let category = document.getElementById("input-category-product").value;
 
     let productData = {
-        code: codeProduct,
+        id: idProduct,
         name: name,
         price: price,
         stock: stock,
         category: category
     };
 
-    let url = 'http://localhost:8080/Library/rest/ManagementLibrary/updateBookAttribute';
+    let url = 'http://localhost:8080/ManagementSale/rest/ManagementProduct/updateProductAttribute';
     fetch(url, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(saleData)
+        body: JSON.stringify(productData)
     })
     .then(response => {
         if (!response.ok) {

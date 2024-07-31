@@ -30,7 +30,7 @@ function updateSale(){
         codeProduct: codeProduct
     };
 
-    let url = 'http://localhost:8080/Library/rest/ManagementLibrary/updateBookAttribute';
+    let url = 'http://localhost:8080/ManagementSale/rest/ManagementSale/updateSaleAttribute';
     fetch(url, {
         method: 'PUT',
         headers: {
