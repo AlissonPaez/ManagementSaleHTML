@@ -2,11 +2,11 @@ let idProduct = "";
 function loadPageProduct(){
     let localStorageProduct = localStorage.getItem("productData");;
     let productData = JSON.parse(localStorageProduct);
-    idProduct = productData.code;
-    document.getElementById("input-name-product").value = saleData.name;
-    document.getElementById("input-price-product").value = saleData.price;
-    document.getElementById("input-stock-product").value = saleData.stock;
-    document.getElementById("input-category-product").value = saleData.category;
+    idProduct = productData.id;
+    document.getElementById("input-name-product").value = productData.name;
+    document.getElementById("input-price-product").value = productData.price;
+    document.getElementById("input-stock-product").value = productData.stock;
+    document.getElementById("input-category-product").value = productData.category;
 }
 loadPageProduct();
 

@@ -125,6 +125,8 @@ function loadProducts(){
                 window.location.href = "./updateproduct.html";
             });
 
+            
+
             /** Agregamos los componentes al body */
             cardBody.appendChild(title);
             cardBody.appendChild(id);
@@ -148,7 +150,6 @@ function loadProducts(){
     .catch(error => console.error('Error:', error));
 }
 
-loadProducts();
 
 function cleanContent(){
     const content = document.getElementById('content');
@@ -243,7 +244,7 @@ function loadUsers(){
             // Agregar event listener al botón
             btnEliminar.addEventListener('click', function() {
                 const nameUser = this.getAttribute('data-code');
-                deleteProductById(nameUser);
+                deleteUser(nameUser);
             });
 
             /** Agregamos los componentes al body */
@@ -388,7 +389,7 @@ function loadSales(){
 
             // Agregar event listener al botón
             btnActualizar.addEventListener('click', function() {
-                localStorage.setItem("saletData", JSON.stringify(sale));
+                localStorage.setItem("saleData", JSON.stringify(sale));
                 window.location.href = "./updatesale.html";
             });
 
