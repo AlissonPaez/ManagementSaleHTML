@@ -52,7 +52,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera a las tarjetas */
     margin: 10px; /* Añade un margen de 10px alrededor de las tarjetas */
     width: calc(30% - 20px); /* Establece el ancho de las tarjetas como el 30% del contenedor menos 20px de margen */
-    height: 300px;
+    height: 350px;
     display: inline-block; /* Muestra las tarjetas como elementos en línea de bloque */
     vertical-align: top; /* Alinea las tarjetas en la parte superior */
   }
@@ -119,6 +119,7 @@ body {
     font-weight: bold;
     margin-top: 12.5%;
   }
+
   
   
   @media (max-width: 768px) {
