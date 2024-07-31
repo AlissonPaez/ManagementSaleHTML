@@ -1,0 +1,138 @@
+body {
+    display: flex; /* Utiliza el modelo de caja flexible para el diseño de la página */
+    min-height: 100vh; /* Establece una altura mínima de la pantalla completa (100% de la altura de la ventana gráfica) */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 12.5%; /* Establece el ancho de la barra lateral */
+    background-color: #343a40; /* Establece el color de fondo de la barra lateral */
+    padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido de la barra lateral */
+    height: 100vh; /* Establece la altura de la barra lateral al 100% de la altura de la ventana gráfica */
+    position: fixed; /* Fija la posición de la barra lateral en la pantalla */
+    top: 0; /* Coloca la barra lateral en la parte superior de la página */
+    left: 0; /* Coloca la barra lateral en el lado izquierdo de la página */
+    color: #fff; /* Establece el color del texto en blanco */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido desborda */
+  }
+  
+  .sidebar h4 {
+    color: #fff; /* Establece el color del texto de los encabezados dentro de la barra lateral */
+  }
+  
+  .sidebar .nav-link {
+    display: block; /* Hace que los enlaces de navegación sean elementos de bloque */
+    color: #ffffff; /* Establece el color del texto de los enlaces de navegación */
+    padding: 10px; /* Añade un relleno interno de 10px alrededor de los enlaces de navegación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 4px; /* Redondea las esquinas de los enlaces */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px a los enlaces */
+  }
+  
+  .sidebar .nav-link.active, .sidebar .nav-link:hover {
+    background-color: #007bff; /* Establece el color de fondo azul cuando el enlace está activo o se desplaza sobre él */
+    color: #ffffff; /* Establece el color del texto en blanco */
+  }
+  
+  .content {
+    margin-left: 15%; /* Añade un margen izquierdo de 220px para dejar espacio para la barra lateral */
+    padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido */
+    flex: 1; /* Permite que el contenido crezca y se contraiga para llenar el espacio disponible */
+    display: flex; /* Utiliza el modelo de caja flexible para el diseño del contenido */
+    flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en varias líneas */
+  }
+  
+  .card {
+    background-color: #fff; /* Establece el color de fondo de las tarjetas */
+    border: 1px solid #ddd; /* Añade un borde de 1px de color gris claro alrededor de las tarjetas */
+    border-radius: 4px; /* Redondea las esquinas de las tarjetas */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del borde de las tarjetas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera a las tarjetas */
+    margin: 10px; /* Añade un margen de 10px alrededor de las tarjetas */
+    width: calc(30% - 20px); /* Establece el ancho de las tarjetas como el 30% del contenedor menos 20px de margen */
+    height: 300px;
+    display: inline-block; /* Muestra las tarjetas como elementos en línea de bloque */
+    vertical-align: top; /* Alinea las tarjetas en la parte superior */
+  }
+  
+  .card-body {
+    padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido de las tarjetas */
+  }
+  
+  .card-title {
+    font-size: 1.25em; /* Establece el tamaño de fuente del título de las tarjetas */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px al título */
+  }
+  
+  .card-text {
+    margin-bottom: 15px; /* Añade un margen inferior de 15px al texto de las tarjetas */
+  }
+  
+  .btn-primary {
+    display: inline-block; /* Muestra los botones como elementos en línea de bloque */
+    padding: 10px 15px; /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
+    color: #fff; /* Establece el color del texto en blanco */
+    background-color: #007bff; /* Establece el color de fondo azul */
+    text-decoration: none; /* Elimina el subrayado de los botones */
+    border-radius: 4px; /* Redondea las esquinas de los botones */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+  }
+  
+  .btn-danger {
+    display: inline-block; /* Muestra los botones como elementos en línea de bloque */
+    padding: 10px 15px; /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
+    color: #fff; /* Establece el color del texto en blanco */
+    background-color: #FB2A20; /* Establece el color de fondo azul */
+    text-decoration: none; /* Elimina el subrayado de los botones */
+    border-radius: 4px; /* Redondea las esquinas de los botones */
+    cursor: pointer;
+  }
+  
+  .btn-danger:hover {
+    background-color: #FE6D66; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+  }
+  
+  .btn-success {
+    display: inline-block; /* Muestra los botones como elementos en línea de bloque */
+    padding: 10px 15px; /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
+    color: #fff; /* Establece el color del texto en blanco */
+    background-color: #50BF07; /* Establece el color de fondo azul */
+    text-decoration: none; /* Elimina el subrayado de los botones */
+    border-radius: 4px; /* Redondea las esquinas de los botones */
+    cursor: pointer;
+  }
+  
+  .margin{
+    margin-left: 2%;
+  }
+  
+  .btn-success:hover {
+    background-color: #9AD672; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+  }
+  
+  h3{
+    font-weight: bold;
+    margin-top: 12.5%;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 80%; /* Establece el ancho de la barra lateral al 100% del contenedor */
+      height: auto; /* Permite que la altura de la barra lateral se ajuste automáticamente */
+      position: relative; /* Cambia la posición de la barra lateral a relativa */
+    }
+    .content {
+      margin-left: 0; /* Elimina el margen izquierdo del contenido */
+      padding-top: 0; /* Elimina el relleno superior del contenido */
+    }
+    .card {
+      width: calc(100% - 20px); /* Establece el ancho de las tarjetas al 100% del contenedor menos 20px de margen */
+      height: 220px;
+    }
+  }
