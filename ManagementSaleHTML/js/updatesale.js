@@ -49,6 +49,8 @@ function updateSale(){
         window.location.href = "./dashboard.html";
     })
     .catch(error => {
+        document.getElementById('error-message').innerText = 'La venta no se pudo actualizar ya que el código del producto no existe.';
+        document.getElementById('error-message').style.display = 'block';
         console.error('Ocurrió el siguiente error con la operación: ', error);
     });
 }
