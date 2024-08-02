@@ -7,6 +7,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 
+#content h1 {
+  margin: 0 auto;
+  display: block; /* Asegúrate de que los elementos sean bloques */
+  text-align: center; /* Opcional, si también quieres centrar el texto dentro de ellos */
+}
+
+#content h1 {
+  font-size: 3rem; /* Ajusta el tamaño del texto según sea necesario */
+  
+}
+
+
 body {
     display: flex; /* Utiliza el modelo de caja flexible para el diseño de la página */
     min-height: 100vh; /* Establece una altura mínima de la pantalla completa (100% de la altura de la ventana gráfica) */
@@ -17,7 +29,7 @@ body {
   .sidebar {
     height: 100vh;
     width: 12.5%; /* Establece el ancho de la barra lateral */
-    background-color: #343a40; /* Establece el color de fondo de la barra lateral */
+    background-color:#333333; /* Establece el color de fondo de la barra lateral */
     padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido de la barra lateral */
     height: 100vh; /* Establece la altura de la barra lateral al 100% de la altura de la ventana gráfica */
     position: fixed; /* Fija la posición de la barra lateral en la pantalla */
@@ -41,7 +53,7 @@ body {
   }
   
   .sidebar .nav-link.active, .sidebar .nav-link:hover {
-    background-color: #007bff; /* Establece el color de fondo azul cuando el enlace está activo o se desplaza sobre él */
+    background-color: #6A0D91; /* Establece el color de fondo azul cuando el enlace está activo o se desplaza sobre él */
     color: #ffffff; /* Establece el color del texto en blanco */
   }
   
@@ -102,20 +114,20 @@ body {
     display: inline-block; /* Muestra los botones como elementos en línea de bloque */
     padding: 10px 15px; /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
     color: #fff; /* Establece el color del texto en blanco */
-    background-color: #007bff; /* Establece el color de fondo azul */
+    background-color: #9e5abb; /* Establece el color de fondo azul */
     text-decoration: none; /* Elimina el subrayado de los botones */
     border-radius: 4px; /* Redondea las esquinas de los botones */
   }
   
   .btn-primary:hover {
-    background-color: #0056b3; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+    background-color: #68118d; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
   }
   
   .btn-danger {
     display: inline-block; /* Muestra los botones como elementos en línea de bloque */
     padding: 10px 15px; /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
     color: #fff; /* Establece el color del texto en blanco */
-    background-color: #FB2A20; /* Establece el color de fondo azul */
+    background-color: #8a102e; /* Establece el color de fondo azul */
     text-decoration: none; /* Elimina el subrayado de los botones */
     border-radius: 4px; /* Redondea las esquinas de los botones */
     cursor: pointer;
@@ -129,14 +141,14 @@ body {
   }
   
   .btn-danger:hover {
-    background-color: #FE6D66; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+    background-color: rgb(241, 148, 143); /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
   }
   
   .btn-success {
     display: inline-block; /* Muestra los botones como elementos en línea de bloque */
     padding: 10px 15px; /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
     color: #fff; /* Establece el color del texto en blanco */
-    background-color: #50BF07; /* Establece el color de fondo azul */
+    background-color: #008080; /* Establece el color de fondo azul */
     text-decoration: none; /* Elimina el subrayado de los botones */
     border-radius: 4px; /* Redondea las esquinas de los botones */
     cursor: pointer;
@@ -151,7 +163,7 @@ body {
   }
   
   .btn-success:hover {
-    background-color: #9AD672; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+    background-color: #9cd6d6; /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
   }
   
   h3{
