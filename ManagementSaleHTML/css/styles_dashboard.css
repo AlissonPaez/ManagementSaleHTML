@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
 body {
     display: flex; /* Utiliza el modelo de caja flexible para el diseño de la página */
     min-height: 100vh; /* Establece una altura mínima de la pantalla completa (100% de la altura de la ventana gráfica) */
     margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    font-family: 'Roboto Slab', serif;
   }
   
   .sidebar {
-    height: 100%;
+    height: 100vh;
     width: 12.5%; /* Establece el ancho de la barra lateral */
     background-color: #343a40; /* Establece el color de fondo de la barra lateral */
     padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido de la barra lateral */
@@ -38,23 +47,42 @@ body {
   
   .content {
     margin-left: 15%; /* Añade un margen izquierdo de 220px para dejar espacio para la barra lateral */
+    margin-top: 20px;
     padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido */
     flex: 1; /* Permite que el contenido crezca y se contraiga para llenar el espacio disponible */
     display: flex; /* Utiliza el modelo de caja flexible para el diseño del contenido */
     flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en varias líneas */
   }
   
+  /* Tarjeta base */
   .card {
-    background-color: #fff; /* Establece el color de fondo de las tarjetas */
-    border: 1px solid #ddd; /* Añade un borde de 1px de color gris claro alrededor de las tarjetas */
-    border-radius: 4px; /* Redondea las esquinas de las tarjetas */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde del borde de las tarjetas */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera a las tarjetas */
-    margin: 10px; /* Añade un margen de 10px alrededor de las tarjetas */
-    width: calc(30% - 20px); /* Establece el ancho de las tarjetas como el 30% del contenedor menos 20px de margen */
-    height: 350px;
-    display: inline-block; /* Muestra las tarjetas como elementos en línea de bloque */
-    vertical-align: top; /* Alinea las tarjetas en la parte superior */
+    background-color: #fff; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    overflow: hidden; /* Oculta contenido desbordante */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 10px; /* Margen */
+    display: inline-block; /* Bloque en línea */
+    vertical-align: top; /* Alineación vertical */
+    width: calc(30% - 20px); /* Ancho */
+  }
+
+  /* Tarjeta específica para usuarios */
+  .card-user {
+    height: 300px; /* Ajusta la altura */
+    /* Otros estilos específicos para tarjetas de usuarios */
+  }
+
+  /* Tarjeta específica para ventas */
+  .card-sale {
+    height: 380px; /* Ajusta la altura */
+    /* Otros estilos específicos para tarjetas de ventas */
+  }
+
+  /* Tarjeta específica para productos */
+  .card-product {
+    height: 300px; /* Ajusta la altura */
+    /* Otros estilos específicos para tarjetas de productos */
   }
   
   .card-body {
@@ -91,6 +119,12 @@ body {
     text-decoration: none; /* Elimina el subrayado de los botones */
     border-radius: 4px; /* Redondea las esquinas de los botones */
     cursor: pointer;
+    margin: 0; /* Asegúrate de que no haya margen */
+    border: none; /* Elimina cualquier borde */
+    font-size: 1em; /* Tamaño de fuente consistente */
+    text-align: center; /* Centra el texto dentro del botón */
+    width: auto; /* Permite que el ancho se ajuste automáticamente según el contenido */
+    box-sizing: border-box; 
   }
   
   .btn-danger:hover {
@@ -105,6 +139,10 @@ body {
     text-decoration: none; /* Elimina el subrayado de los botones */
     border-radius: 4px; /* Redondea las esquinas de los botones */
     cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente consistente */
+    text-align: center; /* Centra el texto dentro del botón */
+    width: auto; /* Permite que el ancho se ajuste automáticamente según el contenido */
+    box-sizing: border-box; 
   }
   
   .margin{

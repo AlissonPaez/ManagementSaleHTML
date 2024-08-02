@@ -34,7 +34,7 @@ function loadProducts(){
     const content = document.getElementById('content');
 
     const cardAdd = document.createElement('div');
-    cardAdd.className = 'card';
+    cardAdd.className = 'card card-product';
 
     const cardBodyAdd = document.createElement('div');
     cardBodyAdd.className = 'card-body';
@@ -68,7 +68,7 @@ function loadProducts(){
         const content = document.getElementById('content');
         data.forEach(product => {
             const card = document.createElement('div');
-            card.className = 'card';
+            card.className = 'card card-product';
 
             const cardBody = document.createElement('div');
             cardBody.className = 'card-body';
@@ -182,7 +182,7 @@ function loadUsers(){
     const content = document.getElementById('content');
 
     const cardAdd = document.createElement('div');
-    cardAdd.className = 'card';
+    cardAdd.className = 'card card-user';
 
     const cardBodyAdd = document.createElement('div');
     cardBodyAdd.className = 'card-body';
@@ -217,7 +217,7 @@ function loadUsers(){
         const content = document.getElementById('content');
         data.forEach(user => {
             const card = document.createElement('div');
-            card.className = 'card';
+            card.className = 'card card-user';
 
             const cardBody = document.createElement('div');
             cardBody.className = 'card-body';
@@ -291,7 +291,7 @@ function loadSales(){
     const content = document.getElementById('content');
 
     const cardAdd = document.createElement('div');
-    cardAdd.className = 'card';
+    cardAdd.className = 'card card-sale';
 
     const cardBodyAdd = document.createElement('div');
     cardBodyAdd.className = 'card-body';
@@ -326,7 +326,7 @@ function loadSales(){
         const content = document.getElementById('content');
         data.forEach(sale => {
             const card = document.createElement('div');
-            card.className = 'card';
+            card.className = 'card card-sale';
 
             const cardBody = document.createElement('div');
             cardBody.className = 'card-body';
