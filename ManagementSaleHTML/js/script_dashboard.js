@@ -44,13 +44,13 @@ function loadProducts(){
     btnAdd.href = './addproduct.html';
 
     const imgAdd = document.createElement('img'); 
-    imgAdd.src = 'resource/icons/agregar-venta.png';
+    imgAdd.src = 'resource/icons/add-product.png';
 
-    imgAdd.style.width = '80px'; // Ancho de 80 píxeles
-    imgAdd.style.height = '80px';
+    imgAdd.style.width = '40px'; // Ajuste a 40 píxeles
+    imgAdd.style.height = '40px'; // Ajuste a 40 píxeles
 
     const lblAdd = document.createElement('h3');
-    lblAdd.textContent = '¡Puedes agregar nuevos productos!';
+    lblAdd.textContent = '¡Bienvenido a la sección de productos! Haz clic en el ícono para agregar un nuevo producto.';
 
     /** Se agrega el ícono el botón */
     btnAdd.appendChild(imgAdd);
@@ -82,22 +82,22 @@ function loadProducts(){
             /** Creamos la sección de Id */
             const id = document.createElement('p');
             id.className = 'card-text';
-            id.textContent = `Código: ${product.id}`;
+            id.innerHTML = `<strong>Código:</strong> ${product.id}`;
 
             /** Creamos la sección de Precio */
             const price = document.createElement('p');
             price.className = 'card-text';
-            price.textContent = `Precio: ${product.price}`;
+            price.innerHTML = `<strong>Precio:</strong> ${product.price}`;
 
             /** Creamos la sección de la Stock */
             const stock = document.createElement('p');
             stock.className = 'card-text';
-            stock.textContent = `Stock: ${product.stock}`;
+            stock.innerHTML = `<strong>Stock:</strong> ${product.stock}`;
 
             /** Sección de la cantidad de la Categoria */
             const category = document.createElement('p');
             category.className = 'card-text';
-            category.textContent = `Categoria: ${product.category}`;
+            category.innerHTML  = `<strong>Categoria:</strong> ${product.category}`;
 
 
             /* Creación de botones de eliminar */
@@ -192,14 +192,14 @@ function loadUsers(){
     btnAdd.href = './adduser.html';
 
     const imgAdd = document.createElement('img'); 
-    imgAdd.src = 'resource/icons/agregar-venta.png';
+    imgAdd.src = 'resource/icons/add-user.png';
 
-    imgAdd.style.width = '80px'; // Ancho de 80 píxeles
-    imgAdd.style.height = '80px';
+    imgAdd.style.width = '40px'; // Ajuste a 40 píxeles
+    imgAdd.style.height = '40px'; 
 
 
     const lblAdd = document.createElement('h3');
-    lblAdd.textContent = '¡Puedes agregar nuevos usuarios!';
+    lblAdd.textContent = '¡Bienvenido a la sección de usuarios! Haz clic en el ícono para agregar un nuevo usuario.';
 
     /** Se agrega el ícono el botón */
     btnAdd.appendChild(imgAdd);
@@ -231,8 +231,8 @@ function loadUsers(){
             /** Creamos la sección de Contraseña */
             const password = document.createElement('p');
             password .className = 'card-text';
-            password .textContent = `Contraseña: ${user.password }`;
-
+            password .innerHTML = `<strong>Contraseña:</strong> ${user.password }`;
+            
 
             /* Creación de botones de eliminar */
             const btnEliminar = document.createElement('button');
@@ -301,14 +301,14 @@ function loadSales(){
     btnAdd.href = './addsale.html';
 
     const imgAdd = document.createElement('img'); 
-    imgAdd.src = 'resource/icons/agregar-venta.png';
+    imgAdd.src = 'resource/icons/add-sale.png';
 
-    imgAdd.style.width = '80px'; // Ancho de 80 píxeles
-    imgAdd.style.height = '80px';
+    imgAdd.style.width = '40px'; // Ajuste a 40 píxeles
+    imgAdd.style.height = '40px'; 
 
 
     const lblAdd = document.createElement('h3');
-    lblAdd.textContent = '¡Puedes agregar nuevas ventas!';
+    lblAdd.textContent = '¡Bienvenido a la sección de ventas! Haz clic en el ícono para agregar una nueva venta.';
 
     /** Se agrega el ícono el botón */
     btnAdd.appendChild(imgAdd);
@@ -340,32 +340,32 @@ function loadSales(){
             /** Creamos la sección de la fecha */
             const date = document.createElement('p');
             date.className = 'card-text';
-            date.textContent = `Fecha: ${sale.date}`;
+            date.innerHTML = `<strong>Fecha:</strong>  ${sale.date}`;
 
             /** Creamos la sección de los productos vendidos */
             const numberProductsSold = document.createElement('p');
             numberProductsSold.className = 'card-text';
-            numberProductsSold.textContent = `Numero de productos vendidos: ${sale.numberProductsSold}`;
+            numberProductsSold.innerHTML = `<strong>Numero de productos vendidos:</strong> ${sale.numberProductsSold}`;
 
             /** Creamos la sección de metodo de pago */
             const paymentMethod = document.createElement('p');
             paymentMethod.className = 'card-text';
-            paymentMethod.textContent = `Metodo de Pago: ${sale.paymentMethod}`;
+            paymentMethod.innerHTML = `<strong>Metodo de Pago:</strong> ${sale.paymentMethod}`;
 
             /** Sección del estado de la venta */
             const saleStatus = document.createElement('p');
             saleStatus.className = 'card-text';
-            saleStatus.textContent = `Estado de la Venta: ${sale.saleStatus}`;
+            saleStatus.innerHTML = `<strong>Estado de la Venta:</strong> ${sale.saleStatus}`;
 
             /** Sección del total de la venta */
             const totalSale = document.createElement('p');
             totalSale.className = 'card-text';
-            totalSale.textContent = `Total de la Venta: ${sale.totalSale}`;
+            totalSale.innerHTML = `<strong>Total de la Venta:</strong> ${sale.totalSale}`;
 
             /** Sección del código del producto */
             const codeProduct = document.createElement('p');
             codeProduct.className = 'card-text';
-            codeProduct.textContent = `Código del Producto: ${sale.codeProduct}`;
+            codeProduct.innerHTML = `<strong>Código del Producto:</strong> ${sale.codeProduct}`;
 
 
             /* Creación de botones de eliminar */

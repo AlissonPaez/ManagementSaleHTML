@@ -124,6 +124,7 @@ body {
     font-size: 1em; /* Tamaño de fuente consistente */
     text-align: center; /* Centra el texto dentro del botón */
     width: auto; /* Permite que el ancho se ajuste automáticamente según el contenido */
+    font-family: 'Roboto Slab', serif;
     box-sizing: border-box; 
   }
   
