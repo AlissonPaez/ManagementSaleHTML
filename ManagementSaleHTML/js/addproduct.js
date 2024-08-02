@@ -21,17 +21,19 @@ function addProduct(){
         },
         body: JSON.stringify(productData)
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Ocurrió un error en la respuesta del servidor: ' + response.statusText);
-        }
-        return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
-        alert("Se agregó el registro.");
-        window.location.href = "./dashboard.html";
+        if (data) {
+            alert("Se agregó el registro.");
+            window.location.href = "./dashboard.html";
+        } else {
+            document.getElementById('error-message').innerText = 'La venta no se pudo añadir, revise todos los campos.';
+            document.getElementById('error-message').style.display = 'block';
+        }
     })
     .catch(error => {
+        document.getElementById('error-message').innerText = 'Error en la operación: ' + error.message;
+        document.getElementById('error-message').style.display = 'block';
         console.error('Ocurrió el siguiente error con la operación: ', error);
     });
 }
