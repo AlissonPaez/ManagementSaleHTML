@@ -25,8 +25,12 @@ function addSale(){
         },
         body: JSON.stringify(saleData)
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Response status:', response.status);
+        return response.json();
+    })
     .then(data => {
+        console.log('Response data:', data);
         if (data) {
             alert("Se agregó el registro.");
             window.location.href = "./dashboard.html";

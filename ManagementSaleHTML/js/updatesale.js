@@ -44,7 +44,7 @@ function updateSale(){
             alert("Se agregó el registro.");
             window.location.href = "./dashboard.html";
         } else {
-            document.getElementById('error-message').innerText = 'El producto no se pudo actualizar, revise todos los campos.';
+            document.getElementById('error-message').innerText = 'La venta no se pudo actualizar, revise todos los campos.';
             document.getElementById('error-message').style.display = 'block';
         }
     })
